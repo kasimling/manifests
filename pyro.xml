@@ -8,12 +8,14 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="git://github.com/koenkooi"  name="KODI"/>
+  <remote fetch="git://github.com/kasimling" name="kasimling"/>
+  <remote fetch="git://github.com/meta-rust" name="meta-rust"/>
     
-  <project remote="rockchip" revision="pyro" name="meta-rockchip" path="sources/meta-rockchip"/>
-  <project remote="rockchip" revision="pyro" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
+  <project remote="kasimling" revision="pyro-rk3399-fixes" name="meta-rockchip" path="sources/meta-rockchip"/>
+  <project remote="kasimling" revision="pyro-rk3399-fixes" name="meta-rockchip-extra" path="sources/meta-rockchip-extra"/>
  
   <project remote="rockchip" revision="master" name="rkbin" path="rkbin"/>
-  <project remote="rockchip" revision="yocto" name="build" path="sources/base">
+  <project remote="kasimling" revision="yocto" name="build" path="sources/base">
         <copyfile dest="README" src="README"/>
         <copyfile dest="setup-environment" src="setup-environment"/>
   </project>
@@ -22,5 +24,6 @@
   <project remote="oe" revision="pyro" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="QT5" revision="pyro" name="meta-qt5" path="sources/meta-qt5" />
   <project remote="OSSystems" revision="master" name="meta-browser" path="sources/meta-browser" />
+  <project remote="meta-rust" revision="pyro" name="meta-rust" path="sources/meta-rust" />
  
   </manifest>
